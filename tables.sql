@@ -1,14 +1,27 @@
 CREATE TABLE users (
-	id SERIAL PRIMARY KEY,
-	username TEXT,
+	userid SERIAL PRIMARY KEY,
+	username TEXT UNIQUE,
 	password TEXT
 );
 
 CREATE TABLE notes (
-	id SERIAL PRIMARY KEY,
-	user_id INTEGER,
+	notesid SERIAL PRIMARY KEY,
+	userid INTEGER,
     username TEXT,
     title TEXT,
 	content TEXT,
-    link TEXT
+    link TEXT,
+	tags TEXT [],
+	postdate TIMESTAMP
+);
+
+CREATE TABLE category (
+	id SERIAL PRIMARY KEY,
+	tag TEXT
+);
+
+CREATE TABLE important (
+	id SERIAL PRIMARY KEY,
+	user_id INTEGER,
+	notes_id INTEGER
 );

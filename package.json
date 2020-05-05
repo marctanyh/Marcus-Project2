@@ -1,0 +1,36 @@
+{
+  "name": "express-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": "10.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
+    "espress": "0.0.0",
+    "express": "^4.17.1",
+    "express-react-views": "^0.10.5",
+    "js-sha256": "^0.9.0",
+    "method-override": "^2.3.10",
+    "nodemon": "^2.0.3",
+    "parser": "^0.1.4",
+    "pg": "^7.18.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "description": "Let's make a cool new app called TWEEDR!! Not Twitter, geez...",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marctanyh/mvc-tweedr.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/marctanyh/mvc-tweedr/issues"
+  },
+  "homepage": "https://github.com/marctanyh/mvc-tweedr#readme"
+}
